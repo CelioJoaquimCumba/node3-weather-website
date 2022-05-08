@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded',()=>{
                     messageOne.textContent = data.error
                 } else {
                     messageOne.textContent = data.location
-                    messageTwo.textContent = 'temperature:'+ data.forecast.temperature
+                    messageTwo.textContent = 'temperature:'+ data.forecast.temperature + '\nDescription:' + data.forecast.description[0]
                 }
             })
         })
